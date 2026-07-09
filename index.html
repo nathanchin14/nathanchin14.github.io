@@ -762,6 +762,21 @@
       /* reduced from 1.5rem */
     }
 
+    .project-desc-list {
+      color: var(--text-muted);
+      font-size: .92rem;
+      margin-bottom: .75rem;
+      padding-left: 1.15rem;
+    }
+
+    .project-desc-list li {
+      margin-bottom: .5rem;
+    }
+
+    .project-desc-list li:last-child {
+      margin-bottom: 0;
+    }
+
     .project-tags {
       display: flex;
       flex-wrap: wrap;
@@ -1351,19 +1366,19 @@
           <div class="project-body">
             <p class="project-number">PROJECT_01</p>
             <h3 class="project-title">Mini Warman Robot</h3>
-            <p class="project-desc">
-              Collaborated in a team of five to design and build a small-scale automated transport system using MDF and
-              electronic components such as an Arduino Uno, DC motors, and servo motors, with the objective of
-              collecting, navigating, and depositing two tennis balls into a target hole. Our forklift inspired design
-              used 3D printed forks that were attached to gears and a DC motor to pickup and drop off the ball.
-              I contributed significantly in a manufacturing
-              role by assisting with CAD design, generating laser-cutting files, and fabricating components for system
-              assembly. Overall, this project was a valuable first hands-on experience with combining controllors,
-              sensors and actuators to create a automated system. Additionally, it taught me valuable lessons regarding
-              the importance of teamwork to yield results and reflecting
-              on areas for further improvement.
-
-            </p>
+            <ul class="project-desc-list">
+              <li>Collaborated in a team of five to design and build a small-scale automated transport system using MDF
+                and electronic components such as an Arduino Uno, DC motors, and servo motors, with the objective of
+                collecting, navigating, and depositing two tennis balls into a target hole</li>
+              <li>Designed a forklift-inspired mechanism using 3D printed forks attached to gears and a DC motor to pick
+                up and drop off the ball</li>
+              <li>Contributed significantly in a manufacturing role — assisting with CAD design, generating
+                laser-cutting files, and fabricating components for system assembly</li>
+              <li>Gained valuable first-hand experience combining controllers, sensors, and actuators to create an
+                automated system</li>
+              <li>Learned key lessons on the importance of teamwork in yielding results, and on reflecting critically on
+                areas for improvement</li>
+            </ul>
             <div class="project-tags">
               <span class="project-tag">Mechanical Design</span>
               <span class="project-tag">CAD</span>
@@ -1393,18 +1408,16 @@
           <div class="project-body">
             <p class="project-number">PROJECT_02</p>
             <h3 class="project-title">Automated Irrigation System</h3>
-            <p class="project-desc">
-              Built an automated closed-loop irrigation system that reads soil moisture and delivers accurate volumes of
-              water to a plant when dry soil is detected. Operating on an Arduino Uno, the system uses precise,
-              interrupt-driven volumetric control using a Hall-Effect water flow sensor along with a capacitive soil
-              moisture sensor for real-time monitoring. The control logic was programmed using C++, and
-              uses a finite state machine design that contains 3 states: IDLE, OPERATING, FAULT. The system operates in
-              IDLE state when the soil moisture is below the set soil moisture threshold, the OPERATING state when it is
-              above the
-              threshold, and the FAULT state when no water is flowing through the tubing or an error has been flagged.
-              Working on this personal project let me experience the struggles of debugging along with the satisfaction
-              of applying the theory I learn into a real-life control system.
-            </p>
+            <ul class="project-desc-list">
+              <li>Built an automated closed-loop irrigation system that reads soil moisture and delivers accurate
+                volumes of water to a plant when dry soil is detected</li>
+              <li>Used a Hall-Effect water flow sensor for interrupt-driven volumetric control, paired with a capacitive
+                soil moisture sensor for real-time monitoring, on an Arduino Uno</li>
+              <li>Programmed control logic in C++ using a finite state machine with three states — IDLE, OPERATING, and
+                FAULT — based on soil moisture threshold and flow detection</li>
+              <li>Navigated debugging challenges while applying control theory learned in coursework to a real-life
+                control system</li>
+            </ul>
             <div class="project-tags">
               <span class="project-tag">Personal Project</span>
               <span class="project-tag">Arduino</span>
@@ -1435,16 +1448,18 @@
           <div class="project-body">
             <p class="project-number">PROJECT_03</p>
             <h3 class="project-title">Vex Robot Control</h3>
-            <p class="project-desc">
-              Programmed an autonomous VEX robot with a partner using C++ to simulate a warehouse forklift tasked with
-              transporting a payload. The system integrated closed-loop PI/P control loops for
-              straight-line driving, precise turning, and arm manipulation alongside
-              ultrasonic sensor feedback for slip-resistant movement and a 3-light-sensor array for path following.
-              During our program demonstration, individual sub-functions succeeded in isolation, but due to some
-              unoptimised gains and imperfect programming, the full task was not completed as expected. However, these
-              shortcomings provided valuable troubleshooting experience, highlighting the importance of early system
-              testing and the need to upgrade basic threshold logic to continuous PID loops for robust navigation.
-            </p>
+            <ul class="project-desc-list">
+              <li>Programmed an autonomous VEX robot with a partner using C++ to simulate a warehouse forklift
+                transporting a payload</li>
+              <li>Implemented closed-loop PI/P control for straight-line driving, precise turning, and arm manipulation
+              </li>
+              <li>Integrated ultrasonic sensor feedback for slip-resistant movement and a 3-light-sensor array for path
+                following</li>
+              <li>Sub-functions succeeded in isolation during the demo, but unoptimised gains and imperfect programming
+                meant the full task wasn't completed as expected</li>
+              <li>Gained valuable troubleshooting experience, highlighting the need for early system testing and
+                upgrading basic threshold logic to continuous PID loops for robust navigation</li>
+            </ul>
             <div class="project-tags">
               <span class="project-tag">Vex Robotics</span>
               <span class="project-tag">C++</span>
@@ -1474,17 +1489,18 @@
           <div class="project-body">
             <p class="project-number">PROJECT_04</p>
             <h3 class="project-title">ADC Conversion Project</h3>
-            <p class="project-desc">
-              Worked with a partner to develop real-time software that quantifies ADC offset error across varying
-              prescaler settings, enabling analysis of the trade-off between sampling speed and conversion accuracy.
-              Using an ATmega328P (Arduino Uno), we wrote low-level C code to interface directly with hardware
-              registers, bypassing standard libraries for precise control of the sampling process. We implemented a
-              finite-state machine driven by tactile inputs to switch between recording analog signals into a ring
-              buffer and transmitting data to a computer. The collected samples were then processed in MATLAB to
-              evaluate and visualise the relationship between clock speed and offset error. This project strengthened
-              my experience in real-time embedded systems, efficient memory management, and understanding the practical
-              limitations of microcontroller hardware.
-            </p>
+            <ul class="project-desc-list">
+              <li>Worked with a partner to develop real-time software quantifying ADC offset error across varying
+                prescaler settings, to analyse the trade-off between sampling speed and conversion accuracy</li>
+              <li>Wrote low-level C code on an ATmega328P (Arduino Uno) to interface directly with hardware registers,
+                bypassing standard libraries for precise control of the sampling process</li>
+              <li>Implemented a finite-state machine driven by tactile inputs to switch between recording analog signals
+                into a ring buffer and transmitting data to a computer</li>
+              <li>Processed collected samples in MATLAB to evaluate and visualise the relationship between clock speed
+                and offset error</li>
+              <li>Strengthened experience in real-time embedded systems, efficient memory management, and the practical
+                limitations of microcontroller hardware</li>
+            </ul>
             <div class="project-tags">
               <span class="project-tag">ADC</span>
               <span class="project-tag">Low-level C programming</span>
@@ -1495,10 +1511,38 @@
           </div>
         </article>
 
-        <!-- Project 5: Future placeholder -->
-        <article class="project-card placeholder">
+        <!-- Project 5: Real-Time Audio Pitch Shifter -->
+        <article class="project-card">
           <div class="project-body">
             <p class="project-number">PROJECT_05</p>
+            <h3 class="project-title">Real-Time Audio Pitch Shifter</h3>
+            <ul class="project-desc-list">
+              <li>Developed a real-time, block-by-block audio pitch-shifting application in C++ utilising the PortAudio
+                library for audio processing</li>
+              <li>Implemented a multithreaded system featuring three concurrent threads, separating microphone I/O
+                capturing, digital signal processing, and asynchronous keyboard control</li>
+              <li>Implemented a thread-safe producer-consumer model using an 8-slot shared ring buffer, synchronised via
+                mutexes and condition variables to prevent race conditions and balance latency</li>
+              <li>Integrated robust error handling to manage real-time hardware constraints, automatically filling
+                buffers with zeros during input overflows to prevent audio dropouts</li>
+              <li>This project gave me valuable experience with multi-threading, synchronisation and programming a
+                real-time system</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">C++</span>
+              <span class="project-tag">Real-Time Audio Processing</span>
+              <span class="project-tag">PortAudio</span>
+              <span class="project-tag">Object Oriented Programming</span>
+              <span class="project-tag">Multithreading</span>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Project 6: Future placeholder -->
+        <article class="project-card placeholder">
+          <div class="project-body">
+            <p class="project-number">PROJECT_06</p>
             <h3 class="project-title">[Future Project Idea]</h3>
             <p class="project-desc">Idea/plan to build an automated basketball rebounder</p>
             <div class="project-tags">
@@ -1547,7 +1591,7 @@
             </div>
             <div class="cad-caption">
               <span class="cad-title">First CAD Design</span>
-              <span class="cad-tool">Autodesk Inventor</span>
+              <span class="cad-tool">Inventor</span>
             </div>
           </article>
 
@@ -1568,7 +1612,7 @@
             </div>
             <div class="cad-caption">
               <span class="cad-title">Mini Warman Challenge Personal Design Concept</span>
-              <span class="cad-tool">Autodesk Inventor</span>
+              <span class="cad-tool">Inventor</span>
             </div>
           </article>
 
