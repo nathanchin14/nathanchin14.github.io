@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
   <!-- ============================================================
@@ -46,7 +46,7 @@
       --bg3: #1c1c1c;
       --border: rgba(255, 255, 255, .08);
       --text: #e8e2d9;
-      --text-muted: #8a8278;
+      --text-muted: #d6d1c8;
       --text-dim: #4a4540;
       --card-bg: #111111;
     }
@@ -57,7 +57,7 @@
       --bg3: #e8e4dd;
       --border: rgba(0, 0, 0, .08);
       --text: #1a1714;
-      --text-muted: #6b6560;
+      --text-muted: #1a1714;
       --text-dim: #c0bab3;
       --card-bg: #ffffff;
     }
@@ -1754,9 +1754,6 @@
             GitHub Profile
           </a>
         </div>
-        <a href="mailto:nathanchin1405@gmail.com" class="btn btn-primary" style="display:inline-flex; margin:0 auto;">
-          Send me an Email ↗
-        </a>
       </div>
     </div>
   </section>
@@ -1779,7 +1776,7 @@
     const themeLabel = document.getElementById('themeLabel');
     const html = document.documentElement;
 
-    const savedTheme = localStorage.getItem('nc-theme') || 'dark';
+    const savedTheme = localStorage.getItem('nc-theme') || 'light';
     applyTheme(savedTheme);
 
     themeToggle.addEventListener('click', () => {
